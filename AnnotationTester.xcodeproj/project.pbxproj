@@ -14,6 +14,10 @@
 		EB6675CD1C7182DE001DB4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6675CB1C7182DE001DB4F4 /* LaunchScreen.storyboard */; };
 		EB6675D81C7182DE001DB4F4 /* AnnotationTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6675D71C7182DE001DB4F4 /* AnnotationTesterTests.swift */; };
 		EB6675E31C7182DE001DB4F4 /* AnnotationTesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6675E21C7182DE001DB4F4 /* AnnotationTesterUITests.swift */; };
+		EB6675F51C718496001DB4F4 /* Range.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6675F21C718496001DB4F4 /* Range.png */; };
+		EB6675F61C718496001DB4F4 /* Range@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6675F31C718496001DB4F4 /* Range@2x.png */; };
+		EB6675F71C718496001DB4F4 /* Smiley_Face.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6675F41C718496001DB4F4 /* Smiley_Face.png */; };
+		EB6675FB1C727C09001DB4F4 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6675FA1C727C09001DB4F4 /* CustomPointAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		EB6675DE1C7182DE001DB4F4 /* AnnotationTesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnnotationTesterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6675E21C7182DE001DB4F4 /* AnnotationTesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationTesterUITests.swift; sourceTree = "<group>"; };
 		EB6675E41C7182DE001DB4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6675F21C718496001DB4F4 /* Range.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Range.png; sourceTree = "<group>"; };
+		EB6675F31C718496001DB4F4 /* Range@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Range@2x.png"; sourceTree = "<group>"; };
+		EB6675F41C718496001DB4F4 /* Smiley_Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Smiley_Face.png; sourceTree = "<group>"; };
+		EB6675FA1C727C09001DB4F4 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,9 @@
 				EB6675D61C7182DE001DB4F4 /* AnnotationTesterTests */,
 				EB6675E11C7182DE001DB4F4 /* AnnotationTesterUITests */,
 				EB6675C01C7182DE001DB4F4 /* Products */,
+				EB6675F21C718496001DB4F4 /* Range.png */,
+				EB6675F31C718496001DB4F4 /* Range@2x.png */,
+				EB6675F41C718496001DB4F4 /* Smiley_Face.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +110,7 @@
 			children = (
 				EB6675C21C7182DE001DB4F4 /* AppDelegate.swift */,
 				EB6675C41C7182DE001DB4F4 /* ViewController.swift */,
+				EB6675FA1C727C09001DB4F4 /* CustomPointAnnotation.swift */,
 				EB6675C61C7182DE001DB4F4 /* Main.storyboard */,
 				EB6675C91C7182DE001DB4F4 /* Assets.xcassets */,
 				EB6675CB1C7182DE001DB4F4 /* LaunchScreen.storyboard */,
@@ -233,8 +245,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6675CD1C7182DE001DB4F4 /* LaunchScreen.storyboard in Resources */,
+				EB6675F61C718496001DB4F4 /* Range@2x.png in Resources */,
+				EB6675F51C718496001DB4F4 /* Range.png in Resources */,
 				EB6675CA1C7182DE001DB4F4 /* Assets.xcassets in Resources */,
 				EB6675C81C7182DE001DB4F4 /* Main.storyboard in Resources */,
+				EB6675F71C718496001DB4F4 /* Smiley_Face.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6675C51C7182DE001DB4F4 /* ViewController.swift in Sources */,
+				EB6675FB1C727C09001DB4F4 /* CustomPointAnnotation.swift in Sources */,
 				EB6675C31C7182DE001DB4F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +503,7 @@
 				EB6675E91C7182DE001DB4F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB6675EA1C7182DE001DB4F4 /* Build configuration list for PBXNativeTarget "AnnotationTesterTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +512,7 @@
 				EB6675EC1C7182DE001DB4F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB6675ED1C7182DE001DB4F4 /* Build configuration list for PBXNativeTarget "AnnotationTesterUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +521,7 @@
 				EB6675EF1C7182DE001DB4F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
