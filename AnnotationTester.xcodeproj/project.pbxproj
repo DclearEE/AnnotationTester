@@ -18,6 +18,7 @@
 		EB6675F61C718496001DB4F4 /* Range@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6675F31C718496001DB4F4 /* Range@2x.png */; };
 		EB6675F71C718496001DB4F4 /* Smiley_Face.png in Resources */ = {isa = PBXBuildFile; fileRef = EB6675F41C718496001DB4F4 /* Smiley_Face.png */; };
 		EB6675FB1C727C09001DB4F4 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6675FA1C727C09001DB4F4 /* CustomPointAnnotation.swift */; };
+		EB6675FD1C72A8BD001DB4F4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6675FC1C72A8BD001DB4F4 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		EB6675F31C718496001DB4F4 /* Range@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Range@2x.png"; sourceTree = "<group>"; };
 		EB6675F41C718496001DB4F4 /* Smiley_Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Smiley_Face.png; sourceTree = "<group>"; };
 		EB6675FA1C727C09001DB4F4 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
+		EB6675FC1C72A8BD001DB4F4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6675FD1C72A8BD001DB4F4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 		EB6675B61C7182DE001DB4F4 = {
 			isa = PBXGroup;
 			children = (
+				EB6675FC1C72A8BD001DB4F4 /* MapKit.framework */,
 				EB6675C11C7182DE001DB4F4 /* AnnotationTester */,
 				EB6675D61C7182DE001DB4F4 /* AnnotationTesterTests */,
 				EB6675E11C7182DE001DB4F4 /* AnnotationTesterUITests */,
@@ -206,6 +210,11 @@
 					EB6675BE1C7182DE001DB4F4 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = XFGV6K582P;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					EB6675D21C7182DE001DB4F4 = {
 						CreatedOnToolsVersion = 7.2.1;
