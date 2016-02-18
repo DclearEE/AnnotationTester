@@ -102,7 +102,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if self.mapView.annotations.count != 0{
             annotation = self.mapView.annotations[0]
             self.mapView.removeAnnotation(annotation)
-            self.mapView.removeAnnotation(info1)
+    //        self.mapView.removeAnnotations(<#T##annotations: [MKAnnotation]##[MKAnnotation]#>)
+            let annotationsToRemove = mapView.annotations.filter { $0 !== mapView.userLocation }
+            mapView.removeAnnotations( annotationsToRemove )
         }
         
         //2: After that, the search process will be initiated asynchronously by transforming the search bar text into a natural language query, the ‘naturalLanguageQuery’ is very important in order to look up for -even an incomplete- addresses and POI (point of interests) like restaurants, Coffeehouse, etc.
@@ -136,7 +138,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             info1.coordinate = CLLocationCoordinate2D(latitude: localSearchResponse!.boundingRegion.center.latitude, longitude:     localSearchResponse!.boundingRegion.center.longitude)
             info1.title = "Solar!"
           //  info1.subtitle = "Subtitle"
-            info1.imageName = "Range"
+            info1.imageName = "Range@2x"
             
             self.mapView.addAnnotation(info1)
         }
